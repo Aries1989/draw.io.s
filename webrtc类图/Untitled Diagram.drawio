@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-17T08:33:58.432Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="A2wbviF4Myah2EHsc-iS" version="15.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-17T08:39:06.389Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="KwCjLZK6AUoax3PBOHqe" version="15.2.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="677" dy="368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="p7KayZ5e3qQGaBq0iAXb-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startSize=26;fillColor=default;strokeColor=default;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="p7KayZ5e3qQGaBq0iAXb-2" target="p7KayZ5e3qQGaBq0iAXb-0" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="p7KayZ5e3qQGaBq0iAXb-2" value="VideoTrackSource" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=default;strokeColor=default;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="p7KayZ5e3qQGaBq0iAXb-2" value="webrtc::VideoTrackSource" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=default;strokeColor=default;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="500" y="260" width="240" height="60" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -34,12 +34,15 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="p7KayZ5e3qQGaBq0iAXb-3" value="CapturerTrackSource" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=default;strokeColor=default;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="420" y="380" width="400" height="120" as="geometry">
+          <mxGeometry x="437.5" y="380" width="365" height="70" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="p7KayZ5e3qQGaBq0iAXb-7" value="static rtc::scoped_refptr&amp;lt;CapturerTrackSource&amp;gt; Create()" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=default;fillColor=default;" parent="p7KayZ5e3qQGaBq0iAXb-3" vertex="1">
-          <mxGeometry y="26" width="400" height="34" as="geometry" />
+          <mxGeometry y="26" width="365" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="dP86Xrbdf1AUeSo-aDk7-17" value="rtc::VideoSourceInterface&amp;lt;webrtc::VideoFrame&amp;gt;* source() override" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="p7KayZ5e3qQGaBq0iAXb-3">
+          <mxGeometry y="50" width="365" height="20" as="geometry" />
         </mxCell>
         <mxCell id="p7KayZ5e3qQGaBq0iAXb-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontColor=default;strokeColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="p7KayZ5e3qQGaBq0iAXb-13" target="p7KayZ5e3qQGaBq0iAXb-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
